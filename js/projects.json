@@ -1,0 +1,115 @@
+[
+
+    {
+        "image": "helo.jpg",
+        "title": "Heloisa Watercolors",
+        "year": "2019",
+        "text": [
+            "Watercolor's website developed with rudimentary PHP (which means not object oriented), also with CSS/SCSS, Javascript vanilla, and some mySQL queries (my first database use totally by my own, without supervision). It contains my first CMS totally coded by me and it is the 2nd website 100% built and deployed, includind server side setup (DigitalOcean) via Ubuntu, HTTPS protocol and MailGun.", 
+            "Site de aquarelas desenvolvido com PHP rudimentar (leia-se não orientado a objeto), além de CSS/SCSS, Javascript vanilla e algumas queries de mySQl (sendo meu primeiro uso de banco de dados com total autonomia, isto é, sem a supervisão de devs mais experientes). Contém o 1º CMS interamente programado por mim e é o 2º website executado sozinho de ponta à ponta, incluindo configuração de servidor (DigitalOcean) via Ubuntu, protocolo HTTPS e MailGun."
+        ],
+        "stack": "#javascript #css #php #mysql",
+        "scope": "full development and design",
+        "url": "https://heloisa.art",
+        "git": "https://github.com/pamplonapaulo/heloisa.art"
+    },
+
+    {
+        "image": "wolff.jpg",
+        "title": "Wolff Café",
+        "year": "2019",
+        "text": [
+            "Responsible of website's maintenance, client's improvements demands, store's inventory updates, including changings at the CSS and Javascript, also store's promotions and administration of anything at Vtex platform, while working period in-house at Vollup Creative Agency.",
+            "Responsável por manutenção, melhorias e atualizações de portal de e-commerce baseado em Vtex, incluindo intervenções de CSS e Javascript, além de administração de promoções e produtos da loja pela própria plataforma Vtex, trabalho realizado durante o período alocado na agência Vollup."
+        ],
+        "stack": "#vtex #javascript #css",
+        "scope": "maintenance",
+        "url": "https://www.wolffcafe.com.br",
+        "git": " "
+    },
+    
+    {
+        "image": "marimaria.jpg",
+        "title": "Mari Maria Makeup",
+        "year": "2019",
+        "text": [
+            "Responsible of final layout ajustments, last improvements demanded by the client before the release of the store, legacy project from other developers, accomplished while working period in-house at Vollup Creative Agency.",
+            "Responsável pelos últimos ajustes de layout e implementação de melhorias finais solicitadas previamente ao lançamento da loja, em projeto herdado de outros desenvolvedores, realizados durante o período alocado na agência Vollup."
+        ],
+        "stack": "#vtex #javascript #css",
+        "scope": "final ajustments",
+        "url": "https://www.marimariamakeup.com",
+        "git": " "
+    },
+    
+    {
+        "image": "brindes.jpg",
+        "title": "Brindes",
+        "year": "2019",
+        "text": [
+            "mySQL database administration and specific ajustments over php programing rules, including domain redirect after take the project's support from another agency, accomplished while working period in-house at Vollup Creative Agency",
+            "Administração de banco de dados em mySQL e implementação de ajustes pontuais nas regras da programação em php, incluindo migração e redirect de domínio de projeto herdado de outra agência, realizado durante o período alocado na agência Vollup."
+        ],
+        "stack": "#php #javascript #mysql #css",
+        "scope": "maintenance",
+        "url": "https://www.brindes.com",
+        "git": " "
+    },
+        
+    {
+        "image": "denali.jpg",
+        "title": "Denali",
+        "year": "2019",
+        "text": [
+            "Front-end practice with Bulma css framework, accomplished with a provided Photoshop layout, in a recruitment process for a international company.",
+            "Prática de front-end com a utilização do framework de css Bulma, realizada a partir de arquivo Photoshop previamente fornecido em processo seletivo para vaga remota em empresa internacional."
+        ],
+        "stack": "#bulma #css #javascript",
+        "scope": "development practice for a provided design",
+        "url": " ",
+        "git": "https://github.com/pamplonapaulo/DenaliLeatherGoods"
+    },
+
+    {
+        "image": "arcelor.jpg",
+        "title": "Arcelor Mittal",
+        "year": "2019",
+        "text": [
+            "Front-end practice accomplished with a provided Photoshop layout, in a recruitment process for a Brazilian company from Sao Paulo.",
+            "Prática de front-end realizada a partir de arquivo Photoshop previamente fornecido em processo seletivo para vaga in-house em empresa de São Paulo."
+        ],
+        "stack": "#javascript #css",
+        "scope": "development practice for a provided design",
+        "url": " ",
+        "git": "https://github.com/pamplonapaulo/ArcelorMittalSteelStore"
+    },
+
+    {
+        "image": "ginger.jpg",
+        "title": "Ginger",
+        "year": "2018",
+        "text": [
+            "Full development started from a provided layout with a Bootstrap based template chosen previously by the client. Website includes SVG animated objects and a dual-language php content.",
+            "Desenvolvimento a partir de design previamente fornecido e template (baseado em Bootstrap) escolhido pelo cliente. O website inclui animação de objetos de SVG e sistema bilíngue em php."
+        ],
+        "stack": "#javascript #css #bootstrap #php",
+        "scope": "full development for a provided design",
+        "url": "http://www.ginger.com.br",
+        "git": "https://github.com/pamplonapaulo/ginger.com.br"
+    },
+    
+    {
+        "image": "sheets.jpg",
+        "title": "Get Your Sheets Together",
+        "year": "2018",
+        "text": [
+            "Front-end practice with a little bit of Node.js back-end, inspired in the Trello application, accomplished to better absorb programming concepts learned in my lately Javascript courses.",
+            "Prática de front-end com partes de back-end, inspirada no conhecido aplicativo Trello, realizada para absorver melhor conceitos de programação aprendidos em cursos recentes de Javascript."
+        ],
+        "stack": "#javascript #css #node",
+        "scope": "development practice",
+        "url": " ",
+        "git": "https://github.com/pamplonapaulo/get-your-sheet-together"
+    }    
+
+]
