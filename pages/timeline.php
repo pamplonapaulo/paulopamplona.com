@@ -1,5 +1,16 @@
 <section id="timeline" class="hero-image">
 
+<form style="width: 100%;background: palevioletred;position: absolute;z-index: 2;">
+    <input type="checkbox" name=a value="Side Project" checked>Side Project
+    <input type="checkbox" name=b value="Professional" checked>Professional
+    <input type="checkbox" name=b value="Personal">Personal
+    <input type="checkbox" name=b value="Education" checked>Education
+    <input type="checkbox" name=b value="Academic Project" checked>Academic Project
+    <input type="checkbox" name=b value="Client's Hat" checked>Client's Hat
+
+    <input type=submit value="Recarregar">
+</form>
+
         <div class="hero-slider">
 
             <ul class="hero-slider-container">
@@ -34,8 +45,17 @@
 
                                 if($lifeEvent[link] != ""){
 
-                                    echo '<a class="hero-slider-btn" href="' . $lifeEvent[link] . '" target="_blank">github</a>';
+                                    if($lifeEvent[link][0] != ""){
 
+                                        echo '<a class="hero-slider-btn" href="' . $lifeEvent[link][0] . '" target="_blank">github</a>';
+    
+                                    }
+
+                                    if($lifeEvent[link][1] != ""){
+
+                                        echo '<a class="hero-slider-btn" href="' . $lifeEvent[link][1] . '" target="_blank">site</a>';
+    
+                                    }
                                 }
                             ?>
 

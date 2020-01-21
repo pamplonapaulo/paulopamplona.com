@@ -1,32 +1,77 @@
 <?php
     $timelineItems   =   array(
 
+            30 => array(
+                bgImage => [""],
+                year => 2020,
+                month =>  $jan,
+                type =>  $pro,
+                content =>  $timeline28,
+                link =>  ["https://github.com/pamplonapaulo/automatedgymsolutions.com", "https://www.automatedgymsolutions.com"]
+            ),
+
+            29 => array(
+                bgImage => ["edu-JS-Promise-2h.jpg"],
+                year => 2019,
+                month =>  $dec,
+                type =>  $edu,
+                content =>  $timeline27,
+                link =>  [""]
+            ),
+
+            28 => array(
+                bgImage => ["edu-Ubuntu-2h.jpg"],
+                year => 2019,
+                month =>  $dec,
+                type =>  $edu,
+                content =>  $timeline25,
+                link =>  [""]
+            ),
+
+            27 => array(
+                bgImage => [""],
+                year => 2019,
+                month =>  $dec,
+                type =>  $side,
+                content =>  $timeline19,
+                link =>  ["https://github.com/pamplonapaulo/heloisa.art", "https://heloisa.art"]
+            ),
+
+            26 => array(
+
+                bgImage => ["edu-scrum.jpg"],
+                year => 2019,
+                month =>  $oct,
+                type =>  $edu,
+                content =>  $timeline30,
+                link =>  [""]
+            ),
 
             25 => array(
+                bgImage => ["edu-SSL-certificate.jpg"],
+                year => 2019,
+                month =>  $oct,
+                type =>  $edu,
+                content =>  $timeline29,
+                link =>  [""]
+            ),
+
+            24 => array(
                 bgImage => [""],
                 year => 2019,
                 month =>  $sep,
                 type =>  $side,
                 content =>  $timeline24,
-                link =>  ""
+                link =>  ["https://github.com/pamplonapaulo/paulopamplona.com"]
             ),
             
-            24 => array(
+            23 => array(
                 bgImage => ["edu-PHP-50hs.jpg"],
                 year => 2019,
                 month =>  $jul,
                 type =>  $edu,
                 content =>  $timeline23,
-                link =>  ""
-            ),
-
-            23 => array(
-                bgImage => [""],
-                year => 2019,
-                month =>  $may,
-                type =>  $side,
-                content =>  $timeline22,
-                link =>  ""
+                link =>  [""]
             ),
 
             22 => array(
@@ -34,26 +79,26 @@
                 year => 2019,
                 month =>  $may,
                 type =>  $side,
-                content =>  $timeline21,
-                link =>  "https://github.com/pamplonapaulo/ArcelorMittalSteelStore"
+                content =>  $timeline22,
+                link =>  [""]
             ),
 
             21 => array(
                 bgImage => [""],
                 year => 2019,
-                month =>  $mar . "-" . $may,
-                type =>  $pro,
-                content =>  $timeline20,
-                link =>  ""
+                month =>  $may,
+                type =>  $side,
+                content =>  $timeline21,
+                link =>  ["https://github.com/pamplonapaulo/ArcelorMittalSteelStore"]
             ),
 
             20 => array(
                 bgImage => [""],
                 year => 2019,
-                month =>  $fev,
-                type =>  $side,
-                content =>  $timeline19,
-                link =>  "https://github.com/pamplonapaulo/heloisa-watercolors"
+                month =>  $mar . "-" . $may,
+                type =>  $pro,
+                content =>  $timeline20,
+                link =>  [""]
             ),
 
             19 => array(
@@ -62,7 +107,7 @@
                 month =>  $sep . "-" . $dec,
                 type =>  $pro,
                 content =>  $timeline18,
-                link =>  "https://github.com/pamplonapaulo/ginger"
+                link =>  ["https://github.com/pamplonapaulo/ginger", "http://ginger.com.br/"]
             ),
 
             18 => array(
@@ -71,7 +116,7 @@
                 month =>  $oct,
                 type =>  $side,
                 content =>  $timeline17,
-                link =>  "https://github.com/pamplonapaulo/get-your-sheet-together"
+                link =>  ["https://github.com/pamplonapaulo/get-your-sheet-together"]
             ),
 
             17 => array(
@@ -80,7 +125,7 @@
                 month =>  $aug,
                 type =>  $per,
                 content =>  $timeline16,
-                link =>  ""
+                link =>  [""]
             ),
 
             16 => array(
@@ -89,7 +134,7 @@
                 month =>  $jul,
                 type =>  $side,
                 content =>  $timeline15,
-                link =>  ""
+                link =>  [""]
             ),
 
             15 => array(
@@ -98,7 +143,7 @@
                 month =>  $mar . "-" . $jul,
                 type =>  $edu,
                 content =>  $timeline14,
-                link =>  ""
+                link =>  [""]
             ),
 
             14 => array(
@@ -107,7 +152,7 @@
                 month =>  $mar,
                 type =>  $edu,
                 content =>  $timeline13,
-                link =>  ""
+                link =>  [""]
             ),
 
             13 => array(
@@ -116,7 +161,7 @@
                 month =>  $nov,
                 type =>  $pro,
                 content =>  $timeline12,
-                link =>  ""
+                link =>  [""]
             ),
 
             12 => array(
@@ -125,7 +170,7 @@
                 month =>  $oct,
                 type =>  $side,
                 content =>  $timeline11,
-                link =>  ""
+                link =>  [""]
             ),
 
             11 => array(
@@ -134,7 +179,7 @@
                 month =>  $jun,
                 type =>  $edu,
                 content =>  $timeline10,
-                link =>  ""
+                link =>  [""]
             ),
 
             10 => array(
@@ -152,7 +197,7 @@
                 month =>  $dec,
                 type =>  $side,
                 content =>  $timeline8,
-                link =>  ""
+                link =>  [""]
             ),
 
             8 => array(
@@ -161,7 +206,7 @@
                 month =>  $mar,
                 type =>  $edu,
                 content =>  $timeline7,
-                link =>  ""
+                link =>  [""]
             ),
 
             7 => array(
@@ -170,7 +215,7 @@
                 month =>  $jun,
                 type =>  $edu,
                 content =>  $timeline6,
-                link =>  ""
+                link =>  [""]
             ),
 
             6 => array(
@@ -179,7 +224,7 @@
                 month =>  8 . " " . $months,
                 type =>  $client,
                 content =>  $timeline5,
-                link =>  ""
+                link =>  [""]
             ),
 
             5 => array(
@@ -188,7 +233,7 @@
                 month =>  $jun,
                 type =>  $edu,
                 content =>  $timeline4,
-                link =>  ""
+                link =>  [""]
             ),
 
             4 => array(
@@ -197,7 +242,7 @@
                 month =>  3 . " " . $years,
                 type =>  $client,
                 content =>  $timeline3,
-                link =>  ""
+                link =>  [""]
             ),
 
             3 => array(
@@ -206,7 +251,7 @@
                 month =>  4 . " " . $years,
                 type =>  $edu,
                 content =>  $timeline2,
-                link =>  ""
+                link =>  [""]
             ),
 
             2 => array(
@@ -215,7 +260,7 @@
                 month =>  $teen,
                 type =>  $per,
                 content =>  $timeline1,
-                link =>  ""
+                link =>  [""]
             ),
 
             1 => array(
@@ -224,7 +269,7 @@
                 month =>  $child,
                 type =>  $per,
                 content =>  $timeline0,
-                link =>  ""
+                link =>  [""]
             ),
 
             0 => array(
@@ -233,7 +278,7 @@
                 month =>  $nov,
                 type =>  $per,
                 content =>  $timelineX,
-                link =>  ""
+                link =>  [""]
             ),            
     );
 
