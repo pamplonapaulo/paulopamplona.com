@@ -76,6 +76,9 @@ include_once('pages/includes/skills-array.php');
     <script type="text/javascript" src="./js/language-button.js"></script>
     <script type="text/javascript" src="./js/timeline-bgs.js"></script>
     <script type="text/javascript" src="./js/timeline-carousel.js"></script>
+    
+    <script type="text/javascript" src="./js/timeline-carousel-filter.js"></script>
+
     <script type="text/javascript" src="./js/mobile-header.js"></script>
     <script type="text/javascript" src="./js/scrolling.js"></script>
     <script type="text/javascript" src="./js/skills.js"></script>
