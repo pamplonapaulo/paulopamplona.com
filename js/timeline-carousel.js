@@ -2,25 +2,141 @@
 (function(){
 
     'use strict';
-
-    var prev;
-    var next;
-
-    var timelineArray;
-    var position;
+   
+    var timelineArray = document.querySelectorAll('.hero-slider ul');
+    var position = 0;
     var lengthTimeline;
-    var itemsOnStage;
+    var itemsOnStage = 1;
+    var prev = document.querySelector('.timeline-nav .nav-left-btn');
+    var next = document.querySelector('.timeline-nav .nav-right-btn');
+
+    function defineStageSize(){
+
+        // Tablet screen
+        if(window.innerWidth >= 760){
+            itemsOnStage = 3;
+        }
+
+        // Desktop screen
+        if(window.innerWidth >= 1024){
+            itemsOnStage = 5;
+            setSpecialMouseHover(selectStagedSlides());
+        }
+    }
+
+    /*
+
+    Timeline event type filter
+
+    */
+
+    // Checkbox Side Menu
+    const filterBtn = document.querySelector('#show-filters-btn');
+    const filterMenu = document.querySelector('.bg-cover');
+
+    filterBtn.addEventListener('click', function(){
+        filterMenu.classList.toggle('visible');
+    });
+
+    // Checkbox Side Menu
+    const labels = document.querySelectorAll('#timeline [type=\"checkbox\"]');
+    const lifeEvents = document.querySelectorAll('#timeline .hero-slider-container li');
+
+    for(let i = 0; i < labels.length; i++){
+        labels[i].addEventListener('click', function(){
+            toggleLifeEventState(labels[i].getAttribute('value'));
+        })
+    }
+
+    function toggleLifeEventState(lifeEventType){
+
+        for(let i=0; i<lifeEvents.length; i++){
+
+            if(lifeEvents[i].classList.contains(lifeEventType)){
+
+                lifeEvents[i].classList.toggle('unchecked');
+            }
+        }
+
+        lengthTimeline = timelineArray[0].querySelectorAll('li:not(.unchecked)').length;
+
+        position = 0;
+        prev.style.opacity = 0;
+
+        if(timelineArray[0].querySelectorAll('li:not(.unchecked)').length <= itemsOnStage){
+            next.style.opacity = 0;
+        } else {
+            next.style.opacity = 1;
+        }
+
+        moveTimeline(timelineArray);
+        hideDateRedundance(selectYears());
+        hideDateRedundance(selectMonths());
+
+        if(window.innerWidth < 1024){
+            resetPagination();
+        }
+    }
+
+    function startTimeline(){
+
+        for(let i = 0; i < labels.length; i++){
+
+            if(labels[i].getAttribute('checked') == null){
+                toggleLifeEventState(labels[i].getAttribute('value'));
+            }
+        }
+    }
+
+    function resetPagination(){
+
+        let paginationContainer = document.querySelector("#timeline .pagination .dots");
+        paginationContainer.innerHTML = '';
+        
+        let items = document.querySelectorAll('#timeline ul li:not(.unchecked)');
+
+        for(var i=0; i<items.length; i++){
+
+            var fragment = document.createDocumentFragment();
+    
+            var div = document.createElement('div');
+            div.classList.add('item');
+            div.setAttribute('dot-index', i);
+    
+            var span = document.createElement('span');
+    
+            div.appendChild(span);
+            fragment.appendChild(div);
+
+            var DOMPosition = document.querySelector('#timeline .pagination .dots');
+
+            DOMPosition.style.width = 'calc(calc(50vw / 7)*' + items.length + ')';
+    
+            DOMPosition.appendChild(fragment);
+        }
+
+        let dots = document.querySelectorAll('#timeline .pagination .item');
+        dots[position].classList.add('current-bg');
+
+        if(items.length > 7){
+            for(var i=6; i<dots.length; i++){
+    
+                dots[i].classList.add('infinite-bg');
+            }
+
+            for(var i=0; i<7; i++){
+    
+                dots[i].classList.add('staged');
+            }
+        }
+    }
 
     setTimeout(function(){
         
-        prev = document.querySelector('.timeline-nav .nav-left-btn');
-        next = document.querySelector('.timeline-nav .nav-right-btn');
-    
-        timelineArray = document.querySelectorAll('.hero-slider ul');
-        position = 0;
-        lengthTimeline = timelineArray[0].querySelectorAll('li').length;
-        itemsOnStage = 1;
-                    
+        startTimeline();
+
+        lengthTimeline = timelineArray[0].querySelectorAll('li:not(.unchecked)').length;
+                            
     }, 1000);
 
     function navVisibility(){
@@ -34,20 +150,6 @@
         } else {
             prev.style.opacity = 1;
             next.style.opacity = 1;
-        }
-    }
-
-    function defineStageSize(){
-
-        // Tablet screen
-        if(window.innerWidth >= 760){
-            itemsOnStage = 3;
-        }
-
-        // Desktop screen
-        if(window.innerWidth >= 1024){
-            itemsOnStage = 5;
-            setSpecialMouseHover(selectStagedSlides());
         }
     }
 
@@ -134,7 +236,7 @@
         
         var stageYearsArray = [];
         var elementIndex = position;
-        var yearsArray = document.querySelectorAll('.hero-slider-year h2');
+        var yearsArray = document.querySelectorAll('li:not(.unchecked) .hero-slider-year h2');
 
         for(var i=0; i<itemsOnStage; i++){  
             stageYearsArray.push(yearsArray[elementIndex]);
@@ -147,7 +249,7 @@
         
         var stageYearsArray = [];
         var elementIndex = position;
-        var yearsArray = document.querySelectorAll('.hero-slider-month h2');
+        var yearsArray = document.querySelectorAll('li:not(.unchecked) .hero-slider-month h2');
 
         for(var i=0; i<itemsOnStage; i++){  
             stageYearsArray.push(yearsArray[elementIndex]);
@@ -160,7 +262,7 @@
         
         var stageContentsArray = [];
         var elementIndex = position;
-        var contentArray = document.querySelectorAll('.hero-slider-container li');
+        var contentArray = document.querySelectorAll('.hero-slider-container li:not(.unchecked)');
 
         for(var i=0; i<itemsOnStage; i++){  
             stageContentsArray.push(contentArray[elementIndex]);
@@ -229,6 +331,6 @@
 
     }, 4000);
 
-    pagination('timeline', 768);
+    pagination('timeline', 768);    
 
 })(document, window.pagination);

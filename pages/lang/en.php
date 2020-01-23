@@ -71,7 +71,7 @@ $timeline5="E-branding strategy, RFP with 10 agencies to find a new social media
 $timeline4="'Planning in Digital Media' certification with 60 hours at Getúlio Vargas Foundation, 100% sponsored by the employer.";
 $timeline3="E-branding coordination: in 1 year, company's first Facebook page got more then 10,000 likes without advertising; the new website (a Microsoft Share Point platform) increased the traffic in 30%; the first company's app for Android and iPhone figured for 3 weeks at the Top 10 in Apple Store; author of the content rules of all TAGs used in website.";
 $timeline2="Accomplishment of a BA. in Journalism at Helio Alonso Integrated College, Rio de Janeiro, after more then 4 years attending it's classes. This careeer in the Communication field took me 10 wellsucceed years before I start to be seduced by technology.";
-$timeline1="As a early teenager my BFF and I used to disassemble computers from his father's office, which's little hardware issues pushed two kids to find and remove the broken pieces, having really fun.";
+$timeline1="As an early teenager my BFF and I used to disassemble computers from his father's office, which's little hardware issues pushed two kids to find and remove the broken pieces, having really fun.";
 $timeline0="First contact with computer's code in life, copying programs written in Basic, as samples at the manual of the computer CP 400 from the Brazilian tech brand 'Prológica'.";
 $timelineX="My birth at 3PM and 20 minutes on November 15, in Rio de Janeiro, Brazil.";
 

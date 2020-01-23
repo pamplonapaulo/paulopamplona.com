@@ -1,44 +1,44 @@
-(function(){
+// (function(){
 
-    'use strict';
+//     'use strict';
 
-    const filterBtn = document.querySelector('#show-filters-btn');
-    const filterMenu = document.querySelector('.bg-cover');
+//     const filterBtn = document.querySelector('#show-filters-btn');
+//     const filterMenu = document.querySelector('.bg-cover');
 
-    filterBtn.addEventListener('click', function(){
-        filterMenu.classList.toggle('visible');
-    });
+//     filterBtn.addEventListener('click', function(){
+//         filterMenu.classList.toggle('visible');
+//     });
 
-    const labels = document.querySelectorAll('#timeline [type=\"checkbox\"]');
-    const lifeEvents = document.querySelectorAll('#timeline .hero-slider-container li');
+//     const labels = document.querySelectorAll('#timeline [type=\"checkbox\"]');
+//     const lifeEvents = document.querySelectorAll('#timeline .hero-slider-container li');
 
-    for(let i = 0; i < labels.length; i++){
-        labels[i].addEventListener('click', function(){
-            toggleLifeEventState(labels[i].getAttribute('value'));
-        })
-    }
+//     for(let i = 0; i < labels.length; i++){
+//         labels[i].addEventListener('click', function(){
+//             toggleLifeEventState(labels[i].getAttribute('value'));
+//         })
+//     }
 
-    function toggleLifeEventState(lifeEventType){
+//     function toggleLifeEventState(lifeEventType){
 
-        for(let i=0; i<lifeEvents.length; i++){
+//         for(let i=0; i<lifeEvents.length; i++){
 
-            if(lifeEvents[i].classList.contains(lifeEventType)){
+//             if(lifeEvents[i].classList.contains(lifeEventType)){
 
-                lifeEvents[i].classList.toggle('unchecked');
-            }
-        }        
-    }
+//                 lifeEvents[i].classList.toggle('unchecked');
+//             }
+//         }        
+//     }
 
-    function startTimeline(){
+//     function startTimeline(){
 
-        for(let i = 0; i < labels.length; i++){
+//         for(let i = 0; i < labels.length; i++){
 
-            if(labels[i].getAttribute('checked') == null){
-                toggleLifeEventState(labels[i].getAttribute('value'));
-            }
-        }
-    }
+//             if(labels[i].getAttribute('checked') == null){
+//                 toggleLifeEventState(labels[i].getAttribute('value'));
+//             }
+//         }
+//     }
 
-    startTimeline();
+//     startTimeline();
 
-})();
+// })();

@@ -897,7 +897,7 @@ body {
         }
     }
 
-    form {
+    aside {
 
         width: 100%;
         position: absolute;
@@ -1141,17 +1141,19 @@ body {
                         width: 0;
                     }
 
-                    &.unchecked {
-                        width: 0;
-                        opacity: 0;
-                        overflow: hidden;
-                    }
+                }
+
+                &.unchecked {
+                    width: 0;
+                    opacity: 0;
+                    overflow: hidden;
                 }
 
                 .hero-slider-year {
                     h2 {
                         font-size: 75px;
-                        color: rgba(255,255,255,.5);
+                        color: #ccc;
+                        opacity: .9;
 
                         &.loader-hack {
                             opacity: 0;
@@ -3084,6 +3086,7 @@ section {
             .dots {
                 transform: translateX(calc(calc(50vw / 7)*0));
                 transition: .2s transform;
+                margin: auto;
             }
     
             .item {

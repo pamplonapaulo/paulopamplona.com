@@ -1,6 +1,6 @@
 <section id="timeline" class="hero-image">
 
-    <form>
+    <aside>
 
         <button id="show-filters-btn"><?= 'Filter'; ?></button>
 
@@ -21,7 +21,6 @@
         if($eventType == 'projeto acadêmico' || $eventType == 'acedemic project')
             echo 'academic';
     }
-
 ?>
 
         <div class="bg-cover">
@@ -58,7 +57,7 @@
 
         </div>
     
-    </form>
+    </aside>
 
     <div class="hero-slider">
 

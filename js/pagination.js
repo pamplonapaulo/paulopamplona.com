@@ -25,7 +25,7 @@
         if(arguments[2]){
             items = arguments[2];
         } else {
-            items = document.querySelectorAll('#' + section + ' ul li');
+            items = document.querySelectorAll('#' + section + ' ul li:not(.unchecked)');
         }
     
         function buildPagination(){

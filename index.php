@@ -3,7 +3,7 @@ session_start();
 include_once('pages/lang.php');
 include_once('pages/includes/timeline-array.php');
 include_once('pages/includes/skills-array.php');
-// include('pages/includes/form_process.php');
+include('pages/includes/form_process.php');
 
 ?>
 
@@ -65,7 +65,7 @@ include_once('pages/includes/skills-array.php');
 
     <?php include('pages/projects.php'); ?>
 
-    <!-- <?php include('pages/contact.php'); ?> -->
+    <?php include('pages/contact.php'); ?>
 
     <?php include('pages/includes/footer.php'); ?>
 
@@ -76,9 +76,6 @@ include_once('pages/includes/skills-array.php');
     <script type="text/javascript" src="./js/language-button.js"></script>
     <script type="text/javascript" src="./js/timeline-bgs.js"></script>
     <script type="text/javascript" src="./js/timeline-carousel.js"></script>
-    
-    <script type="text/javascript" src="./js/timeline-carousel-filter.js"></script>
-
     <script type="text/javascript" src="./js/mobile-header.js"></script>
     <script type="text/javascript" src="./js/scrolling.js"></script>
     <script type="text/javascript" src="./js/skills.js"></script>
