@@ -26,33 +26,33 @@
         <div class="bg-cover">
 
             <fieldset>
-                <input type="checkbox" id="side-project" name="side-project" value="side-project" tabindex="1" checked>
-                <label for="side-project"><?= $side; ?></label>
+                <input type="checkbox" id="professional" name="professional" value="professional" tabindex="1" checked>
+                <label for="professional"><?= $pro; ?></label>
             </fieldset>
 
             <fieldset>
-                <input type="checkbox" id="professional" name="professional" value="professional" tabindex="2" checked>
-                <label for="professional"><?= $pro; ?></label>
+                <input type="checkbox" id="side-project" name="side-project" value="side-project" tabindex="2" checked>
+                <label for="side-project"><?= $side; ?></label>
             </fieldset>
-        
+                
             <fieldset>
-                <input type="checkbox" id="personal" name="personal" value="personal" tabindex="3" >
-                <label for="personal"><?= $per; ?></label>
-            </fieldset>
-        
-            <fieldset>
-                <input type="checkbox" id="education" name="education" value="education" tabindex="4" >
+                <input type="checkbox" id="education" name="education" value="education" tabindex="3" >
                 <label for="education"><?= $edu; ?></label>
             </fieldset>
-        
+                
+            <fieldset>
+                <input type="checkbox" id="client" name="client" value="client" tabindex="4" >
+                <label for="client"><?= $client; ?></label>
+            </fieldset>
+
             <fieldset>
                 <input type="checkbox" id="academic" name="academic" value="academic" tabindex="5" >
                 <label for="academic"><?= $academy; ?></label>
             </fieldset>
-        
+
             <fieldset>
-                <input type="checkbox" id="client" name="client" value="client" tabindex="6" >
-                <label for="client"><?= $client; ?></label>
+                <input type="checkbox" id="personal" name="personal" value="personal" tabindex="6" >
+                <label for="personal"><?= $per; ?></label>
             </fieldset>
 
         </div>

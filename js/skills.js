@@ -134,8 +134,8 @@
 
         //document.querySelector('#skills .pagination').style.width = '100vw';
         //document.querySelector('#skills .pagination').style.transform = 'translateY(-250%)';
-        pagination('skills', 768);
+        // pagination('skills', 768);
 
     }, 3000);
     
-})(document, window.pagination);
+})();

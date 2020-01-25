@@ -2,7 +2,7 @@
 (function(){
 
     'use strict';
-   
+
     var timelineArray = document.querySelectorAll('.hero-slider ul');
     var position = 0;
     var lengthTimeline;
@@ -24,13 +24,15 @@
         }
     }
 
-    /*
 
-    Timeline event type filter
 
-    */
 
-    // Checkbox Side Menu
+    /* * * * * * * * * * * * * * * * *
+    *                                 *
+    *  Timeline event type filter     *
+    *                                 *
+    * * * * * * * * * * * * * * * * * */
+
     const filterBtn = document.querySelector('#show-filters-btn');
     const filterMenu = document.querySelector('.bg-cover');
 
@@ -38,10 +40,10 @@
         filterMenu.classList.toggle('visible');
     });
 
-    // Checkbox Side Menu
     const labels = document.querySelectorAll('#timeline [type=\"checkbox\"]');
     const lifeEvents = document.querySelectorAll('#timeline .hero-slider-container li');
 
+    // Checkboxes listener
     for(let i = 0; i < labels.length; i++){
         labels[i].addEventListener('click', function(){
             toggleLifeEventState(labels[i].getAttribute('value'));
@@ -69,7 +71,7 @@
             next.style.opacity = 1;
         }
 
-        moveTimeline(timelineArray);
+        moveTimelineULElement(timelineArray);
         hideDateRedundance(selectYears());
         hideDateRedundance(selectMonths());
 
@@ -88,47 +90,71 @@
         }
     }
 
+    // Trigged by checkbox changes:
     function resetPagination(){
 
-        let paginationContainer = document.querySelector("#timeline .pagination .dots");
-        paginationContainer.innerHTML = '';
-        
         let items = document.querySelectorAll('#timeline ul li:not(.unchecked)');
 
-        for(var i=0; i<items.length; i++){
+        function wipeOutOldHTML(){
 
-            var fragment = document.createDocumentFragment();
-    
-            var div = document.createElement('div');
-            div.classList.add('item');
-            div.setAttribute('dot-index', i);
-    
-            var span = document.createElement('span');
-    
-            div.appendChild(span);
-            fragment.appendChild(div);
-
-            var DOMPosition = document.querySelector('#timeline .pagination .dots');
-
-            DOMPosition.style.width = 'calc(calc(50vw / 7)*' + items.length + ')';
-    
-            DOMPosition.appendChild(fragment);
+            document.querySelector("#timeline .pagination .dots").innerHTML = '';
         }
 
-        let dots = document.querySelectorAll('#timeline .pagination .item');
-        dots[position].classList.add('current-bg');
+        function appendPaginationFragment(items){
 
-        if(items.length > 7){
-            for(var i=6; i<dots.length; i++){
-    
-                dots[i].classList.add('infinite-bg');
-            }
+            for(let i=0; i<items.length; i++){
 
-            for(var i=0; i<7; i++){
+                let fragment = document.createDocumentFragment();
+        
+                let div = document.createElement('div');
+                div.classList.add('item');
+                div.setAttribute('dot-index', i);
+        
+                let span = document.createElement('span');
+        
+                div.appendChild(span);
+                fragment.appendChild(div);
     
-                dots[i].classList.add('staged');
+                let DOMPosition = document.querySelector('#timeline .pagination .dots');
+    
+                DOMPosition.style.width = 'calc(calc(50vw / 7)*' + items.length + ')';
+
+                DOMPosition.appendChild(fragment);
             }
         }
+
+        function replacePaginationClasses(items){
+
+            let dots = document.querySelectorAll('#timeline .pagination .item');
+            dots[position].classList.add('current-bg');
+    
+            if(items.length > 7){
+                for(let i=6; i<dots.length; i++){
+                    dots[i].classList.add('infinite-bg');
+                }
+    
+                for(let i=0; i<7; i++){
+                    dots[i].classList.add('staged');
+                }
+            } else {
+                for(let i=0; i<items.length; i++){
+                    dots[i].classList.add('staged');
+                }
+            }
+        }
+
+        function rewindWrapper(){
+            let dotsLine = document.querySelector('#timeline .pagination .wrapper .dots');
+            dotsLine.style.transform = 'translateX(0)';
+        }
+
+        wipeOutOldHTML();
+
+        appendPaginationFragment(items);
+
+        replacePaginationClasses(items);
+
+        rewindWrapper();
     }
 
     setTimeout(function(){
@@ -268,11 +294,10 @@
             stageContentsArray.push(contentArray[elementIndex]);
             elementIndex++;
         }
-
         return stageContentsArray;
     }
 
-    function moveTimeline(timelineArray){
+    function moveTimelineULElement(timelineArray){
 
         for(var i=0; i<timelineArray.length; i++){
 
@@ -299,7 +324,7 @@
                 }    
 
                 position--;
-                moveTimeline(timelineArray);
+                moveTimelineULElement(timelineArray);
                 hideDateRedundance(selectYears());
                 hideDateRedundance(selectMonths());
 
@@ -318,7 +343,7 @@
                 }    
 
                 position++;
-                moveTimeline(timelineArray);
+                moveTimelineULElement(timelineArray);
                 hideDateRedundance(selectYears());
                 hideDateRedundance(selectMonths());
 
@@ -331,6 +356,4 @@
 
     }, 4000);
 
-    pagination('timeline', 768);    
-
-})(document, window.pagination);
+})();

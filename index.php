@@ -3,7 +3,7 @@ session_start();
 include_once('pages/lang.php');
 include_once('pages/includes/timeline-array.php');
 include_once('pages/includes/skills-array.php');
-include('pages/includes/form_process.php');
+// include('pages/includes/form_process.php');
 
 ?>
 
@@ -65,14 +65,14 @@ include('pages/includes/form_process.php');
 
     <?php include('pages/projects.php'); ?>
 
-    <?php include('pages/contact.php'); ?>
+    <!-- <?php include('pages/contact.php'); ?> -->
 
     <?php include('pages/includes/footer.php'); ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
-    <script type="text/javascript" src="./js/pagination.js"></script>
+    <!-- <script type="text/javascript" src="./js/pagination.js"></script> -->
     <script type="text/javascript" src="./js/language-button.js"></script>
     <script type="text/javascript" src="./js/timeline-bgs.js"></script>
     <script type="text/javascript" src="./js/timeline-carousel.js"></script>
@@ -80,6 +80,10 @@ include('pages/includes/form_process.php');
     <script type="text/javascript" src="./js/scrolling.js"></script>
     <script type="text/javascript" src="./js/skills.js"></script>
     <script type="text/javascript" src="./js/projects.js"></script>
+
+    <script type="text/javascript" src="./js/pagination.js"></script>
+
+
     <script type="text/javascript" src="./js/hashListener.js"></script>
     <script type="text/javascript" src="./js/mobile-swiper.js"></script>
     <script type="text/javascript" src="./js/mobile-keyboard-issue.js"></script>

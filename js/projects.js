@@ -1,4 +1,4 @@
-(function(){
+(function(win){
 
     'use strict';
 
@@ -21,6 +21,8 @@
                     response = ajax.responseText;    
                 }
                 projects = response;
+
+                win.projects = projects;
 
                 switchWrappersOpacity(0);
         
@@ -280,14 +282,17 @@
 
     loadProjects();
 
-    window.addEventListener('DOMContentLoaded', (event) => {
+    // window.addEventListener('DOMContentLoaded', (event) => {
 
-        setTimeout(function(){
+    //     setTimeout(function(){
 
-                pagination('projects', 'any', projects);
+    //             pagination('projects', 'any', projects);
 
-        }, 6000);
+    //     }, 6000);
 
-    });    
+    // });    
 
-})(document, window.pagination);
+
+
+
+})(window, document);
