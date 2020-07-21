@@ -19,7 +19,7 @@ $copyRight="&copy;2019 All rights reserved";//CREDITS
 //TIMELINE
 // months:
 $jan="Jan";
-$fev="Feb";
+$feb="Feb";
 $mar="Mar";
 $apr="Apr";
 $may="May";
@@ -42,6 +42,12 @@ $edu="education";
 $client="client's hat";
 $side="side project";
 //contents:
+$timeline36="Accomplishment of a 91-hour certification in React.js with my favorite professor, Fernando Daciuk.";
+$timeline35="8 hours bootcamp of \"High Availability Cloud\" entirely using AWS. Just fascinating, the push I needed to throw myself into AWS.";
+$timeline34="Covid-19 prompted me to start an app for meditation enthusiasts, encouraging the practice and stimulating business among that niche. But as there are many apps in one, I had to pause it to keep focused in a 80-hour-React.js-course that I have to finish asap.";
+$timeline33="10 hours of React.js + React Native + Node.js, with RocketSeat online school. That's the stack which I dream to work many years.";
+$timeline32="Accomplishment of my 5th full 10-day Vipassana retreat, which is an ancient mindfulness meditation with and scientific approach.";
+$timeline31="9 hour Udemy certification on Git and GitHub, with instructor Fernando Daciuk.";
 $timeline30="Short Udemy certification 'Scrum For Beginners'.";
 $timeline29="Short Udemy certification 'Free SSL Certificate using Let's Encrypt'.";
 $timeline28="Automated Gym Solutions' website, my very first international direct client.";
@@ -109,13 +115,9 @@ $Vtex_p3="By the end of this period of 3 months I was starting to get a little d
 $SCSS_p1="Sassy CSS was introduced to me also in the front-end certification. I love the nesting structure that helps me to have a better organization of my code, also using variables, mixins, and media query includes.";
 $SCSS_p2="But I'm aware that so far my use didn't try to take benefit of functions. I actually never needed it, so I'm not sure when I will get into that. But for sure it seems to be a very fancy feature of this compiler and at one point my curiosity will lead me to learn a bit of those functions.";
 
-$Reactjs_p1="Very about to start a 50-hour React.js course, whith Fernando Daciuk, already purchased.";
-
-
-
-
-
-
+$Reactjs_p1="Accomplished in July 2020 an important 91-hour course in React.js, with my favorite professor Fernando Daciuk.";
+$Reactjs_p2="These last learning months taught me how to use Redux, Context API, React Hooks, React Router, Higher-Order Components, Styled Components, Wepback, Component Lifecycle, as well as all the fundamentals of the library from its emergence to the most recent versions (v16), in addition to providing me with a considerable update for EcmaScript 6.";
+$Reactjs_p3="Today I feel completely in love with this technology and my biggest dream is to work with it for a long time.";
 
 //CONTACT
 $contactTitle="Don't be shy!";

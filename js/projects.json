@@ -1,4 +1,17 @@
 [
+    {
+        "image": "ags.jpg",
+        "title": "Automated Gym Solutions",
+        "year": "2020",
+        "text": [
+            "Simple front-end project, the 2nd developed with Simpleux template (based on Bootstrap). It's my 2nd direct client and the 1st international client. This was my fastest project so far: delivered in 1 month, but if we consider only the hours of work, it can be said that it only consumed 2 weeks.", 
+            "Simples projeto de front-end, o 2º desenvolvido no template Simpleux (baseado em Bootstrap). É meu 2º cliente atendido diretamente e o 1º cliente internacional. O projeto foi desenvolvido em tempo recorde: entregue em 1 mês mas, se considerarmos apenas as horas de trabalho, pode-se dizer que consumiu apenas 2 semanas."
+        ],
+        "stack": "#javascript #css #bootstrap",
+        "scope": "full development and some design contributions",
+        "url": "https://www.automatedgymsolutions.com/",
+        "git": "https://github.com/pamplonapaulo/automatedgymsolutions.com"
+    },
 
     {
         "image": "helo.jpg",
@@ -68,20 +81,6 @@
         "scope": "development practice for a provided design",
         "url": " ",
         "git": "https://github.com/pamplonapaulo/DenaliLeatherGoods"
-    },
-
-    {
-        "image": "arcelor.jpg",
-        "title": "Arcelor Mittal",
-        "year": "2019",
-        "text": [
-            "Front-end practice accomplished with a provided Photoshop layout, in a recruitment process for a Brazilian company from Sao Paulo.",
-            "Prática de front-end realizada a partir de arquivo Photoshop previamente fornecido em processo seletivo para vaga in-house em empresa de São Paulo."
-        ],
-        "stack": "#javascript #css",
-        "scope": "development practice for a provided design",
-        "url": " ",
-        "git": "https://github.com/pamplonapaulo/ArcelorMittalSteelStore"
     },
 
     {

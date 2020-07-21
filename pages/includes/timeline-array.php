@@ -1,5 +1,59 @@
 <?php
     $timelineItems   =   array(
+        
+            36 => array(
+                bgImage => ["edu-React-90hs.jpg"],
+                year => 2020,
+                month =>  $jul,
+                type =>  $edu,
+                content =>  $timeline36,
+                link =>  ["https://github.com/pamplonapaulo/cursoReactjsNinjaBackup"]
+            ),
+            
+            35 => array(
+                bgImage => ["edu-cloud-aws.jpg"],
+                year => 2020,
+                month =>  $may,
+                type =>  $edu,
+                content =>  $timeline35,
+                link =>  [""]
+            ),
+
+            34 => array(
+                bgImage => [""],
+                year => 2020,
+                month =>  $apr,
+                type =>  $side,
+                content =>  $timeline34,
+                link =>  ["https://github.com/pamplonapaulo/metta.native", "https://metta.club/"]
+            ),
+
+            33 => array(
+                bgImage => ["edu-reactjs-reactnative-node.jpg"],
+                year => 2020,
+                month =>  $mar,
+                type =>  $edu,
+                content =>  $timeline33,
+                link =>  ["https://github.com/pamplonapaulo/backup-react-3rd-xp"]
+            ),
+            
+            32 => array(
+                bgImage => ["per-Myself.jpg", "per-MeditationHall.jpg", "per-Landscape.jpg"],
+                year => 2020,
+                month =>  $feb,
+                type =>  $per,
+                content =>  $timeline32,
+                link =>  [""]
+            ),
+
+            31 => array(
+                bgImage => ["edu-udemy-git-9hs.jpg"],
+                year => 2020,
+                month =>  $jan,
+                type =>  $edu,
+                content =>  $timeline31,
+                link =>  [""]
+            ),
 
             30 => array(
                 bgImage => [""],
@@ -31,8 +85,8 @@
             27 => array(
                 bgImage => [""],
                 year => 2019,
-                month =>  $dec,
-                type =>  $side,
+                month =>  $oct . "-" . $nov,
+                type =>  $pro,
                 content =>  $timeline19,
                 link =>  ["https://github.com/pamplonapaulo/heloisa.art", "https://heloisa.art"]
             ),

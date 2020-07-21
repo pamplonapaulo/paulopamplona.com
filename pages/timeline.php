@@ -31,12 +31,12 @@
             </fieldset>
 
             <fieldset>
-                <input type="checkbox" id="side-project" name="side-project" value="side-project" tabindex="2" checked>
+                <input type="checkbox" id="side-project" name="side-project" value="side-project" tabindex="2">
                 <label for="side-project"><?= $side; ?></label>
             </fieldset>
                 
             <fieldset>
-                <input type="checkbox" id="education" name="education" value="education" tabindex="3" >
+                <input type="checkbox" id="education" name="education" value="education" tabindex="3" checked>
                 <label for="education"><?= $edu; ?></label>
             </fieldset>
                 

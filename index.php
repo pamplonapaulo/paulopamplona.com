@@ -3,8 +3,7 @@ session_start();
 include_once('pages/lang.php');
 include_once('pages/includes/timeline-array.php');
 include_once('pages/includes/skills-array.php');
-include('pages/includes/form_process.php');
-
+include('pages/includes/form_process.php');// Comment this line out if running at localhost, otherwise MailGun will break the site.
 ?>
 
 <!DOCTYPE html>
@@ -65,7 +64,7 @@ include('pages/includes/form_process.php');
 
     <?php include('pages/projects.php'); ?>
 
-    <?php include('pages/contact.php'); ?>
+    <!-- <?php include('pages/contact.php'); ?> -->
 
     <?php include('pages/includes/footer.php'); ?>
 

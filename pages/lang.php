@@ -13,7 +13,7 @@ if(isset($_GET['lang']) && $_GET['lang']=='en'){
 }
 
 if(!isset($_GET['lang']) && !isset($_SESSION['lang'])){
-    include_once('lang/pt.php');
+    include_once('lang/en.php');
 }
 
 if(isset($_SESSION['lang']) && $_SESSION['lang']=='pt'){

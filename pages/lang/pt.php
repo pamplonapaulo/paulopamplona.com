@@ -17,7 +17,7 @@ $copyRight="&copy;2019 Todos os direitos reservados";
 //TIMELINE
 // months:
 $jan="Jan";
-$fev="Fev";
+$feb="Fev";
 $mar="Mar";
 $apr="Abr";
 $may="Mai";
@@ -40,6 +40,12 @@ $edu="educação";
 $client="chapéu de cliente";
 $side="projeto paralelo";
 //contents:
+$timeline36="Obtenção de certificação de 91 horas em React.js com o meu professor favorito, Fernando Daciuk.";
+$timeline35="Bootcamp de 8 horas de \"Cloud em Alta Disponibilidade\" com as tecnologias da AWS. Simplesmente fascinante, o empurrão que me faltava para me jogar na AWS.";
+$timeline34="Covid-19 me levou a começar um app para adeptos de meditação, encorajando a prática e estimulando negócios nesse nicho. Mas, como são muitos apps em um, tive de pausá-lo para retomar um curso de 80 horas de React.js que preciso concluir logo.";
+$timeline33="10 horas de React.js + React Native + Node.js pela RocketSeat. Essa é a stack e que sonho trabalhar por muitos anos.";
+$timeline32="Completado meu 5º retiro de 10 dias de Vipassana, uma técnica milenar de meditação/mindfulness com abordagem científica.";
+$timeline31="Certificação Udemy de 9 horas em Git e GitHub, com o instrutor Fernando Daciuk.";
 $timeline30="Pequena certificação Udemy 'Scrum Para Iniciantes'.";
 $timeline29="Pequena certificação Udemy em 'SSL Certificate grátis com Let's Encrypt'.";
 $timeline28="Website Automated Gym Solutions, meu primeiro cliente internacional, atendido diretamente.";
@@ -106,8 +112,11 @@ $Vtex_p3="By the end of this period of 3 months I was starting to get a little d
 $SCSS_p1="Sassy CSS também me foi apresentado durante a certificação de front-end. Eu amo a estrutura de 'nesting' que me ajuda a obter uma melhor organização do código, também utilizando vairáveis, mixins e includes de media queries.";
 $SCSS_p2="Mas estou ciente de que até aqui meu uso ainda não tentou tirar proveito de funções. Na verdade ainda não senti necessidade, então não posso estar certo de quando entrarei nessa parte. Mas com certeza este parece ser um recurso bem interessante do compilador e em algum momento minha curiosidade me levará a aprender um pouco destas functions.";
 
-$Reactjs_p1="Muito prestes a começar um curso já adquirido de 50 horas de React.js, com o prof. Fernando Daciuk.";
+$Reactjs_p1="Concluído em julho de 2020 um importante curso de 91 horas de React.js, com meu professor favorito Fernando Daciuk.";
 
+$Reactjs_p2="Estes últimos meses de aprendizado me ensinaram a utilizar Redux, Context API, React Hooks, React Router, Higher-Order Components, Styled Components, Wepback, Component Lifecycle, bem como todos os fundamentos da library desde o seu surgimento até as versões mais recentes (v16), além de ter me proporcionado uma considerável atualização para o EcmaScript 6.";
+
+$Reactjs_p3="Hoje sinto-me completamente apaixonado por essa tecnologia e meu maior sonho é trabalhar com ela por um bom tempo.";
 
 
 

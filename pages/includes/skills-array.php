@@ -1,6 +1,22 @@
 <?php
     $skillsItems   =   array(
 
+            "reactjs" => array(
+                title =>  "React.js",
+                bgImage => "background-image: url('./assets/skills/reactjs.png');",
+                // bgImage => "background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./assets/skills/reactjs.png');",
+                cssClass => "",
+                rating1 =>  "star",
+                rating2 =>  "star",
+                rating3 =>  "star_half",
+                rating4 =>  "star_border",
+                rating5 =>  "star_border",
+                p1 =>  $Reactjs_p1,
+                p2 =>  $Reactjs_p2,
+                p3 =>  $Reactjs_p3,
+                p4 =>  $Reactjs_p4
+            ),
+
             "js" => array(
                 title =>  "Javascript",
                 bgImage => "background-image: url('./assets/skills/javascript.jpg');",
@@ -106,20 +122,6 @@
                 p4 =>  $SCSS_p4
             ),
     
-            "reactjs" => array(
-                title =>  "React.js",
-                bgImage => "background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./assets/skills/reactjs.png');",
-                cssClass => "comingSoon",
-                rating1 =>  "star_border",
-                rating2 =>  "star_border",
-                rating3 =>  "star_border",
-                rating4 =>  "star_border",
-                rating5 =>  "star_border",
-                p1 =>  $Reactjs_p1,
-                p2 =>  $Reactjs_p2,
-                p3 =>  $Reactjs_p3,
-                p4 =>  $Reactjs_p4
-            ),
     );
 
 ?>
