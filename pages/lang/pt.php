@@ -40,6 +40,7 @@ $edu="educação";
 $client="chapéu de cliente";
 $side="projeto paralelo";
 //contents:
+$timeline37="Reconhecimento de minha cidadania portuguesa, graças ao meu querido avô materno, apesar de outros dois bisavôs paternos também portugueses.";
 $timeline36="Obtenção de certificação de 91 horas em React.js com o meu professor favorito, Fernando Daciuk.";
 $timeline35="Bootcamp de 8 horas de \"Cloud em Alta Disponibilidade\" com as tecnologias da AWS. Simplesmente fascinante, o empurrão que me faltava para me jogar na AWS.";
 $timeline34="Covid-19 me levou a começar um app para adeptos de meditação, encorajando a prática e estimulando negócios nesse nicho. Mas, como são muitos apps em um, tive de pausá-lo para retomar um curso de 80 horas de React.js que preciso concluir logo.";

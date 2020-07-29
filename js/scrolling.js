@@ -107,6 +107,7 @@
 
     if(isTrackPad(event)){
       deviceSensibility = 70;
+
     } else {
       deviceSensibility = 5;
       if(isSafari){
@@ -124,13 +125,14 @@
   });
 
   var countDecimals = function(value) {
+
     if (Math.floor(value) !== value)
         return value.toString().split(".")[1].length || 0;
     return 0;
   }
 
   function isTrackPad(e){
-    if(countDecimals(e.deltaY)==0){
+    if(countDecimals(e.deltaY) == 0){
       return true;
     } else {
       return false;
@@ -174,6 +176,7 @@
     } else if(direction == 'up'){
 
       if(currentView == 1){
+        console.log('function changeScroll: from SKILLS to TIMELINE now...')
         smoothScroll(0);
         //forceHashUpdate(0);
       } else if(currentView == 2){
@@ -218,27 +221,24 @@
 
     var end = pages[toHere];
 
+    if(end == 0) {
+      end = 1
+    }
+
     if(isSafari){
-
         TweenLite.to(window, .5, {scrollTo:end});
-
     } else {
-
         window.scroll({
         top: end, 
         left: 0, 
         behavior: 'smooth'
         });
     }
-
     changeCurrentView(toHere);
 
     setTimeout(function(){
-
       forceHashUpdate(toHere);
-
     }, 700);
-    
   }
   
   function getInitialPosition(){
@@ -274,7 +274,6 @@
     currentView = newView;
 
     setTimeout(function(){ changeSectionTitle(currentView); }, 500);
-
     setTimeout(function(){ toggleSectionTitle(); }, 800);
 
     window.currentPage = currentView;
@@ -317,9 +316,7 @@
   }
 
   function getSubtitle(element){
-
     return element.getAttribute('data-subhighlight');
-
   }
 
   function jumptoForm(){
@@ -354,6 +351,47 @@
   }
   
   getInitialPosition();
-  jumptoForm();  
+  jumptoForm();
+
+
+  // Mobile scrolling:
+
+  var elem = document.querySelector('html');
+
+  var yStart;
+
+  elem.addEventListener('touchstart', function (e) { handleTouchStart(e); });
+  elem.addEventListener('touchend', function (e) { handleTouchEnd(e); });
+
+  function handleTouchStart(e) {
+    yStart = getYCoord(e)
+  }
+
+  function handleTouchEnd(e) {
+    var yEnd = getYCoord(e)
+
+    if (yStart > (yEnd + 50)) {
+      changeScroll('down');
+    }
+
+    if (yEnd > (yStart + 50)) {
+      changeScroll('up');
+    }
+  }
+
+  function getYCoord(e) {
+    
+    var touch = false;
+
+    if (e.touches.length > 0) {
+      touch = e.touches[0];
+    } else {
+      touch = e.changedTouches[0];
+    }
+
+    if (touch) {
+      return touch.pageY;
+    }
+  }
 
 })();

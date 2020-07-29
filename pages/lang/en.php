@@ -42,6 +42,7 @@ $edu="education";
 $client="client's hat";
 $side="side project";
 //contents:
+$timeline37="Acknowledgement of my Portuguese citizenship. Thanks to my dear maternal grandfather, despite two other paternal great-grandparents also Portuguese.";
 $timeline36="Accomplishment of a 91-hour certification in React.js with my favorite professor, Fernando Daciuk.";
 $timeline35="8 hours bootcamp of \"High Availability Cloud\" entirely using AWS. Just fascinating, the push I needed to throw myself into AWS.";
 $timeline34="Covid-19 prompted me to start an app for meditation enthusiasts, encouraging the practice and stimulating business among that niche. But as there are many apps in one, I had to pause it to keep focused in a 80-hour-React.js-course that I have to finish asap.";

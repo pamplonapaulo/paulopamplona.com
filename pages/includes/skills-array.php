@@ -3,7 +3,7 @@
 
             "reactjs" => array(
                 title =>  "React.js",
-                bgImage => "background-image: url('./assets/skills/reactjs.png');",
+                bgImage => "reactjs.png",
                 // bgImage => "background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./assets/skills/reactjs.png');",
                 cssClass => "",
                 rating1 =>  "star",
@@ -19,7 +19,7 @@
 
             "js" => array(
                 title =>  "Javascript",
-                bgImage => "background-image: url('./assets/skills/javascript.jpg');",
+                bgImage => "javascript.jpg",
                 cssClass => "",
                 rating1 =>  "star",
                 rating2 =>  "star",
@@ -34,7 +34,7 @@
 
             "php" => array(
                 title =>  "PHP",
-                bgImage => "background-image: url('./assets/skills/php.jpg');",
+                bgImage => "php.jpg",
                 cssClass => "",
                 rating1 =>  "star",
                 rating2 =>  "star",
@@ -49,7 +49,7 @@
 
             "css" => array(
                 title =>  "CSS",
-                bgImage => "background-image: url('./assets/skills/css.jpg');",
+                bgImage => "css.jpg",
                 cssClass => "",
                 rating1 =>  "star",
                 rating2 =>  "star",
@@ -64,7 +64,8 @@
     
             "html" => array(
                 title =>  "HTML",
-                bgImage => "background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/skills/html.jpg');",
+                bgImage => "html.jpg",
+                // bgImage => "background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/skills/html.jpg",
                 cssClass => "",
                 rating1 =>  "star",
                 rating2 =>  "star",
@@ -79,7 +80,7 @@
 
             "bootstrap" => array(
                 title =>  "Bootstrap",
-                bgImage => "background-image: url('./assets/skills/bootstrap.png');",
+                bgImage => "bootstrap.png",
                 cssClass => "",
                 rating1 =>  "star",
                 rating2 =>  "star_half",
@@ -94,7 +95,7 @@
 
             "vtex" => array(
                 title =>  "Vtex",
-                bgImage => "background-image: url('./assets/skills/vtex.png');",
+                bgImage => "vtex.png",
                 cssClass => "",
                 rating1 =>  "star",
                 rating2 =>  "star_half",
@@ -109,7 +110,7 @@
 
             "scss" => array(
                 title =>  "SCSS",
-                bgImage => "background-image: url('./assets/skills/scss.png');",
+                bgImage => "scss.png",
                 cssClass => "",
                 rating1 =>  "star",
                 rating2 =>  "star_half",

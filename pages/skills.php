@@ -8,7 +8,7 @@
             
                 foreach ($skillsItems as $skills => $item) { ?>
 
-                <li class="<?php echo $item[cssClass]?>" data-index="<?php echo $indexCounter++ ?>" style="<?php echo $item[bgImage]?>">
+                <li class="<?php echo $item[cssClass]?>" data-index="<?php echo $indexCounter++ ?>" data-image="<?php echo $item[bgImage]?>">
                     <div class="skill-wrapper">
                         <h1><?php echo $item[title]?></h1>
                         <i class="material-icons"><?php echo $item[rating1]?></i>
@@ -58,3 +58,33 @@
             </div>
         </div>
     </div>
+
+    <script>
+        (function(){
+            'use strict'
+
+            setTimeout(() => {
+
+                if(window.innerWidth < 678) {
+                    var folder = 'mobile'
+                }
+
+                if(window.innerWidth >= 678 && window.innerWidth < 1024) {
+                    var folder = 'tablet'
+                }
+
+                if(window.innerWidth >= 1024) {
+                    var folder = 'desktop'
+                }
+
+                var items = document.querySelectorAll('#skills ul li')
+
+                for(var i = 0; i < items.length; i++){
+                    var fileName = items[i].getAttribute('data-image')
+                    items[i].setAttribute('style', 'background-image: url(\'./assets/skills/' + folder + '/' + fileName + '\');')
+                }
+
+            }, 2000);
+
+        })();
+    </script>
