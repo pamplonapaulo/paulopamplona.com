@@ -668,7 +668,10 @@ body {
                     }
 
                     svg {
+                        @include transition(.2s all);
                         height: 40px;
+                        width: 40px;
+                        fill: #FFFFFF;
                     }
                 }
 
@@ -678,12 +681,20 @@ body {
 
                     &:hover {
                         @include transform(scale(1.2));
+
+                        a {
+        
+                            svg {
+                                fill: yellow;
+                            }
+                        }
                     }
                 }   
             }
 
             @include MQ(L){
-                @include transform(translateY(150px));
+                bottom: 0;
+                @include transform(translateY(-50px));
             }    
         }
 
