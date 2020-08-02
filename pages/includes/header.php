@@ -17,6 +17,36 @@
 
         <nav class="nav">
 
+            <div class="social">
+
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/paulopamplona" target="_blank">
+                        <img src="./assets/social/linkedin-black.svg" alt="LinkedIn">
+                    </a>
+                </div>
+
+                <div class="github">
+                    <a href="https://github.com/pamplonapaulo" target="_blank">
+                        <img src="./assets/social/github.svg" alt="GitHub">
+                    </a>
+                </div>
+
+                <div class="curriculum">
+                    <a href="./assets/paulo-pamplona-curriculum.pdf" target="_blank">
+                        <img src="./assets/social/curriculum.svg" alt="Curriculum Vitae PDF file">
+                    </a>
+                </div>
+
+                <div class="whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=5511993527916" target="_blank">
+                        <img src="./assets/social/whatsapp.svg" alt="Direct message via Whatsapp">
+                    </a>
+                </div>
+
+
+            
+            </div>
+
             <div class="idioms">
 
                 <a title="Português" href="#" class="flags langPT on">
