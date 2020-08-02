@@ -39,7 +39,7 @@
 
                 <div class="whatsapp">
                     <a href="https://api.whatsapp.com/send?phone=5511993527916" target="_blank">
-                        <img src="./assets/social/whatsapp.svg" alt="Direct message via Whatsapp">
+                        <img src="./assets/social/whatsapp.svg" alt="Direct message me via Whatsapp">
                     </a>
                 </div>
 

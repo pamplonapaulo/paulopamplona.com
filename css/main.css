@@ -590,6 +590,30 @@ body > div.hero-nav {
 .header .nav .social div a img {
   height: 40px;
 }
+.header .nav .social div a svg {
+  height: 40px;
+}
+@media only screen and (min-width: 1024px) {
+  .header .nav .social div {
+    -webkit-transition: 0.2s transform;
+    -moz-transition: 0.2s transform;
+    -ms-transition: 0.2s transform;
+    -o-transition: 0.2s transform;
+    transition: 0.2s transform;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  .header .nav .social div:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
 @media only screen and (min-width: 1024px) {
   .header .nav .social {
     -webkit-transform: translateY(150px);
@@ -612,6 +636,9 @@ body > div.hero-nav {
   position: absolute;
   width: 57px;
   -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
   text-decoration: none;
   transform: translate(-1px, 0px);
@@ -624,6 +651,9 @@ body > div.hero-nav {
   border-radius: 16px;
   border: 1px solid black;
   -webkit-transition: opacity 0.6s ease-in-out;
+  -moz-transition: opacity 0.6s ease-in-out;
+  -ms-transition: opacity 0.6s ease-in-out;
+  -o-transition: opacity 0.6s ease-in-out;
   transition: opacity 0.6s ease-in-out;
   cursor: pointer;
 }
@@ -689,12 +719,31 @@ body > div.hero-nav {
     top: unset;
     transform: translateY(0);
     min-width: 115px;
+    -webkit-transition: 0.2s transform;
+    -moz-transition: 0.2s transform;
+    -ms-transition: 0.2s transform;
+    -o-transition: 0.2s transform;
+    transition: 0.2s transform;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
 }
 @media only screen and (min-width: 1024px) and (max-height: 550px) {
   .header .nav .idioms {
     transform: scale(0.75);
     margin-top: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header .nav .idioms:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 .header .nav .menu {
