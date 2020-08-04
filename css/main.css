@@ -602,23 +602,32 @@ body > div.hero-nav {
 }
 @media only screen and (min-width: 1024px) {
   .header .nav .social div {
-    -webkit-transition: 0.2s transform;
-    -moz-transition: 0.2s transform;
-    -ms-transition: 0.2s transform;
-    -o-transition: 0.2s transform;
-    transition: 0.2s transform;
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    -ms-transition: 0.2s all;
+    -o-transition: 0.2s all;
+    transition: 0.2s all;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
+    padding: 10px;
+    border: 1px solid;
+    border-color: transparent;
+  }
+  .header .nav .social div a {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
   .header .nav .social div:hover {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
+    border-color: yellow;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
   }
   .header .nav .social div:hover a svg {
     fill: yellow;

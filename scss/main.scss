@@ -676,11 +676,21 @@ body {
                 }
 
                 @include MQ(L){
-                    @include transition(.2s transform);
+                    @include transition(.2s all);
                     @include transform(scale(1));
+                    padding: 10px;
+                    border: 1px solid;
+                    border-color: transparent;
+
+                    a {
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                    }
 
                     &:hover {
-                        @include transform(scale(1.2));
+                        border-color: yellow;
+                        @include transform(scale(1.1));
 
                         a {
         
