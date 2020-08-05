@@ -1,12 +1,22 @@
 (function(){
 
     'use strict';
+    
+    if (!!window.location.href.match(/\?lang=/g)) {
 
-    window.addEventListener('DOMContentLoaded', (event) => {
-        
-        openPage();
-        
-    });
+        document.querySelector('#loading .dancing-letters').classList.add('isHidden');
+        document.querySelector('#loading .author-presentation').classList.remove('isFadedOut');
+        document.querySelector('#loading .author-presentation').classList.add('isFadedOut');
+        document.querySelector('#loading .author-presentation').classList.add('isFadedOut');
+        restoreStuffOpacity();
+        document.querySelector('#loading .loading-bgs').classList.add('isHidden');
+        document.querySelector('#loading').style.display = 'none';
+
+    } else {
+        window.addEventListener('DOMContentLoaded', (event) => {
+            openPage();
+        });
+    }
     
     function openPage(){
 

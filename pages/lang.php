@@ -2,13 +2,9 @@
 
 if(isset($_GET['lang']) && $_GET['lang']=='pt'){
     unset($_SESSION['lang']);
-    $_SESSION['lang']=true;
     $_SESSION['lang']='pt';
-}
-
-if(isset($_GET['lang']) && $_GET['lang']=='en'){
+} else if(isset($_GET['lang']) && $_GET['lang']=='en' || !isset($_GET['lang'])){
     unset($_SESSION['lang']);
-    $_SESSION['lang']=true;
     $_SESSION['lang']='en';
 }
 

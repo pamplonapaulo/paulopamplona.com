@@ -49,11 +49,11 @@
 
             <div class="idioms">
 
-                <a title="Português" href="#" class="flags langPT on">
+                <a title="Português" href="#" class="flags langPT">
                     <img src="./assets/icon-flags/pt.png" alt="Portuguese flag"/>
                 </a>
 
-                <a title="English" href="#" class="flags langEN">
+                <a title="English" href="#" class="flags langEN on">
                     <img src="./assets/icon-flags/uk.png" alt="English flag"/>
                 </a>
 
