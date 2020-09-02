@@ -2150,74 +2150,74 @@ body {
                 }        
             }
 
-            .project-link {
-                overflow: hidden;
-                transition: transform .2s linear;
-                left: 7.25vw;
-                position: relative;
-                float: left;
-                top: calc(50vh + 125px + 10px);
+            a{
+                display: none;
 
-                @include MQ(S) {
-                    top: calc(100px + 60vh + 30px + 5px);
-                }
-
-                &:nth-of-type(1) {
-                    margin-right: 7.25vw;
-                }
-
-                @include MQ(A) {
-
-                    width: 60px;
-                    text-align: center;
-                    height: 20px;
-                    padding: 10px 0;
-                    border: white solid 1px;
-                    background: rgba(0,0,0,.75);
-                    border-radius: 5px;
-                    //left: calc(7.25vw * 1.5);
-                    left: 0;
-                    margin: 0 calc(7.5vw * 1.5);
-                    padding: 10px calc(15vw / 4);
-                    top: calc(100px + 38vh + 30px + 5px);
+                .project-link {
+                    overflow: hidden;
+                    transition: transform .2s linear;
+                    left: 7.25vw;
+                    position: relative;
+                    float: left;
+                    top: calc(50vh + 125px + 10px);
 
                     @include MQ(S) {
-                        padding: 10px calc(23vw / 4);
-                        top: calc(100px + 50vh + 30px + 5px);
-                    }    
-                }
-
-                a[href$=' ']{
-                    display: none;
-                }
-
-                @include MQ(L){
-                    float: right;
-                    margin-left: 1rem;
-
-                    top: unset;
-                    left: unset;
+                        top: calc(100px + 60vh + 30px + 5px);
+                    }
 
                     &:nth-of-type(1) {
-                        margin-right: unset;
-                    }   
-                }
+                        margin-right: 7.25vw;
+                    }
 
-                &.off {
-                    display: none;
-                }
+                    @include MQ(A) {
 
-                img {
-                    height: 20px;
-                    opacity: .6;
-                    transition: opacity .2s linear;
-                }                
+                        width: 60px;
+                        text-align: center;
+                        height: 20px;
+                        padding: 10px 0;
+                        border: white solid 1px;
+                        background: rgba(0,0,0,.75);
+                        border-radius: 5px;
+                        //left: calc(7.25vw * 1.5);
+                        left: 0;
+                        margin: 0 calc(7.5vw * 1.5);
+                        padding: 10px calc(15vw / 4);
+                        top: calc(100px + 38vh + 30px + 5px);
 
-                &:hover {
-                    transform: scale(1.2);
+                        @include MQ(S) {
+                            padding: 10px calc(23vw / 4);
+                            top: calc(100px + 50vh + 30px + 5px);
+                        }    
+                    }
+
+                    @include MQ(L){
+                        float: right;
+                        margin-left: 1rem;
+
+                        top: unset;
+                        left: unset;
+
+                        &:nth-of-type(1) {
+                            margin-right: unset;
+                        }
+
+                        &:hover {
+                            transform: scale(1.2);
+        
+                            img {
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    &.off {
+                        display: none;
+                    }
 
                     img {
-                        opacity: 1;
+                        height: 20px;
+                        opacity: .6;
+                        transition: opacity .2s linear;
                     }
                 }
             }

@@ -2000,7 +2000,10 @@ body > div.hero-nav {
     transform: translateY(-36%);
   }
 }
-.projects .stage .project-info .project-link {
+.projects .stage .project-info a {
+  display: none;
+}
+.projects .stage .project-info a .project-link {
   overflow: hidden;
   transition: transform 0.2s linear;
   left: 7.25vw;
@@ -2009,15 +2012,15 @@ body > div.hero-nav {
   top: calc(50vh + 125px + 10px);
 }
 @media only screen and (min-width: 355px) {
-  .projects .stage .project-info .project-link {
+  .projects .stage .project-info a .project-link {
     top: calc(100px + 60vh + 30px + 5px);
   }
 }
-.projects .stage .project-info .project-link:nth-of-type(1) {
+.projects .stage .project-info a .project-link:nth-of-type(1) {
   margin-right: 7.25vw;
 }
 @media only screen and (max-width: 1024px) {
-  .projects .stage .project-info .project-link {
+  .projects .stage .project-info a .project-link {
     width: 60px;
     text-align: center;
     height: 20px;
@@ -2032,38 +2035,35 @@ body > div.hero-nav {
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 355px) {
-  .projects .stage .project-info .project-link {
+  .projects .stage .project-info a .project-link {
     padding: 10px calc(23vw / 4);
     top: calc(100px + 50vh + 30px + 5px);
   }
 }
-.projects .stage .project-info .project-link a[href$=" "] {
-  display: none;
-}
 @media only screen and (min-width: 1024px) {
-  .projects .stage .project-info .project-link {
+  .projects .stage .project-info a .project-link {
     float: right;
     margin-left: 1rem;
     top: unset;
     left: unset;
   }
-  .projects .stage .project-info .project-link:nth-of-type(1) {
+  .projects .stage .project-info a .project-link:nth-of-type(1) {
     margin-right: unset;
   }
+  .projects .stage .project-info a .project-link:hover {
+    transform: scale(1.2);
+  }
+  .projects .stage .project-info a .project-link:hover img {
+    opacity: 1;
+  }
 }
-.projects .stage .project-info .project-link.off {
+.projects .stage .project-info a .project-link.off {
   display: none;
 }
-.projects .stage .project-info .project-link img {
+.projects .stage .project-info a .project-link img {
   height: 20px;
   opacity: 0.6;
   transition: opacity 0.2s linear;
-}
-.projects .stage .project-info .project-link:hover {
-  transform: scale(1.2);
-}
-.projects .stage .project-info .project-link:hover img {
-  opacity: 1;
 }
 .projects .stage .project-info p {
   float: left;

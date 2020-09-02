@@ -15,18 +15,18 @@
             <div class="project-info">
 
                 <p class="year"></p>
+                
+                <a href="#" target="_blank">
+                  <div class="project-link github" title="Visit GitHub">
+                    <img src="./assets/social/github.svg" alt="Visit GitHub">
+                  </div>
+                </a>                
 
-                <div class="project-link github" title="Visit GitHub">
-                    <a href="#" target="_blank">
-                        <img src="./assets/social/github.svg" alt="Visit GitHub">
-                    </a>
-                </div>
-
-                <div class="project-link siteUrl" title="Visit website">
-                    <a href="#" target="_blank">
-                        <img src="./assets/social/website.svg" alt="Visit website">
-                    </a>
-                </div>
+                <a href="#" target="_blank">
+                  <div class="project-link siteUrl" title="Visit website">
+                    <img src="./assets/social/website.svg" alt="Visit website">
+                  </div>
+                </a>
 
                 <p class="text"></p>
 

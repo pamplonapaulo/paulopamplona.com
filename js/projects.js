@@ -116,13 +116,13 @@
 
     function buildLink(link, type){
 
-        var wrapper = document.querySelector('.project-link.' + type);
+        var wrapper = document.querySelector('.project-link.' + type).parentElement;
         
         if(link == ' '){
             wrapper.style.display = 'none';
         } else {
             wrapper.style.display = 'block';
-            var anchor = document.querySelector('.project-link.' + type + ' a');
+            var anchor = document.querySelector('.project-link.' + type).parentElement;
             anchor.setAttribute('href', link);
         }
     }
