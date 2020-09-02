@@ -51,6 +51,7 @@
         restoreOpacity(document.querySelector('header'));
         restoreOpacity(document.querySelector('footer'));
         restoreOpacity(document.querySelector('header.header nav.nav'));
+        restoreOpacity(document.querySelector('.bg-cover'));
 
         var years = document.querySelectorAll('#timeline ul li .hero-slider-year h2');
         for(var i=0; i < years.length; i++){

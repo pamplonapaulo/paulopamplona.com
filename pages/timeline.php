@@ -1,8 +1,6 @@
 <section id="timeline" class="hero-image">
 
-    <aside>
-
-        <button id="show-filters-btn"><?= 'Filter'; ?></button>
+    <button id="show-filters-btn"><?= 'Filter'; ?></button>
 
 <?php
 
@@ -23,42 +21,40 @@
     }
 ?>
 
-        <div class="bg-cover">
+    <div class="bg-cover">
 
-            <fieldset>
-                <input type="checkbox" id="professional" name="professional" value="professional" tabindex="1" checked>
-                <label for="professional"><?= $pro; ?></label>
-            </fieldset>
+        <fieldset>
+            <input type="checkbox" id="professional" name="professional" value="professional" tabindex="1" checked>
+            <label for="professional"><?= $pro; ?></label>
+        </fieldset>
 
-            <fieldset>
-                <input type="checkbox" id="side-project" name="side-project" value="side-project" tabindex="2">
-                <label for="side-project"><?= $side; ?></label>
-            </fieldset>
-                
-            <fieldset>
-                <input type="checkbox" id="education" name="education" value="education" tabindex="3" checked>
-                <label for="education"><?= $edu; ?></label>
-            </fieldset>
-                
-            <fieldset>
-                <input type="checkbox" id="client" name="client" value="client" tabindex="4" >
-                <label for="client"><?= $client; ?></label>
-            </fieldset>
+        <fieldset>
+            <input type="checkbox" id="side-project" name="side-project" value="side-project" tabindex="2">
+            <label for="side-project"><?= $side; ?></label>
+        </fieldset>
+            
+        <fieldset>
+            <input type="checkbox" id="education" name="education" value="education" tabindex="3" checked>
+            <label for="education"><?= $edu; ?></label>
+        </fieldset>
+            
+        <fieldset>
+            <input type="checkbox" id="client" name="client" value="client" tabindex="4" >
+            <label for="client"><?= $client; ?></label>
+        </fieldset>
 
-            <fieldset>
-                <input type="checkbox" id="academic" name="academic" value="academic" tabindex="5" >
-                <label for="academic"><?= $academy; ?></label>
-            </fieldset>
+        <fieldset>
+            <input type="checkbox" id="academic" name="academic" value="academic" tabindex="5" >
+            <label for="academic"><?= $academy; ?></label>
+        </fieldset>
 
-            <fieldset>
-                <input type="checkbox" id="personal" name="personal" value="personal" tabindex="6" >
-                <label for="personal"><?= $per; ?></label>
-            </fieldset>
+        <fieldset>
+            <input type="checkbox" id="personal" name="personal" value="personal" tabindex="6" >
+            <label for="personal"><?= $per; ?></label>
+        </fieldset>
 
-        </div>
+    </div>
     
-    </aside>
-
     <div class="hero-slider">
 
         <ul class="hero-slider-container">
