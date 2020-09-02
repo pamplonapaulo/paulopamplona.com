@@ -910,7 +910,7 @@ body > div.hero-nav {
   transition: all 0.2s ease-in-out;
   position: absolute;
   top: 70px;
-  z-index: 999;
+  z-index: 2;
   left: 0;
   width: 90%;
   margin: 5%;
