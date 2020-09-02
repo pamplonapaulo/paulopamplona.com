@@ -218,7 +218,7 @@
             }, .03);
         } else {
 
-            var icons = document.querySelectorAll('.project-link a img');
+            var icons = document.querySelectorAll('.project-link img');
 
             TweenMax.staggerTo(icons, speed, {
                 y: translationIconsAndInfo
